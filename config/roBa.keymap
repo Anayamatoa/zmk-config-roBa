@@ -45,6 +45,11 @@
             bindings = <&kp NUMBER_3>;
             key-positions = <30 31>;
         };
+
+        input {
+            bindings = <&kp LANG_ZENKAKUHANKAKU>;
+            key-positions = <41 40>;
+        };
     };
 
     macros {
@@ -61,7 +66,9 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
             // 追加: スクロールのタップ時間を設定 (20ms)
+
             tap-ms = <20>;
         };
     };
