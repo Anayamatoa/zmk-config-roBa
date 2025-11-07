@@ -96,7 +96,7 @@
 &kp LEFT_SHIFT  &kp LCTRL  &kp TAB  &kp ESC  &kp LEFT_ALT  &kp SPACE      &kp RETURN     &kp BACKSPACE                             &kp DEL
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         FUNCTION {
@@ -135,6 +135,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans    &trans    &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans                              &trans
             >;
+
+            sensor-bindings = <&scroll_up_down>;
         };
 
         SCROLL {
